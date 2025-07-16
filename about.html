@@ -154,11 +154,33 @@
                             <use xlink:href="#facebook"></use>
                         </svg></a></li>
             </ul>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribe">
+                Subscribe
+            </button>
+            <div class="modal fade" id="subscribe" tabindex="-1" aria-labelledby="subscribeLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h1 class="modal-title fs-5" id="subscribeLabel">Subscribed</h1>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            You are now a subscriber of Papa Mia.
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Unsubscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </footer>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="aboutscript.js"></script>
 </body>
 
 </html>
