@@ -31,17 +31,20 @@
             </div>
         </div>
     </nav>
-    <div class="d-flex flex-row flex-shrink-0 p-3 bg-light justify-content-between position-sticky" style="width: 100%;">
-        <a href="menu.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
-            <span class="fs-4 text-info">Menu</span>
-        </a>
-        <hr>
-        <div id="list-example" class="list-group list-group-horizontal">
-            <a class="list-group-item list-group-item-action" href="#main">Mains</a>
-            <a class="list-group-item list-group-item-action" href="#side">Sides</a>
-            <a class="list-group-item list-group-item-action" href="#drink">Drinks</a>
-        </div>
-        <!-- <div class="dropdown">   position-fixed  
+    <div class="container d-flex row">
+        <div class="col-md-2 d-none d-md-block">
+            <div class="position-fixed" style="width: 12.5%;">
+                <a href="menu.html" class="align-items-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                    <span class="fs-4 text-dark">Menu</span>
+                </a>
+                <hr>
+                <div id="list-example" class="list-group">
+                    <a class="list-group-item list-group-item-action" href="#main">Mains</a>
+                    <a class="list-group-item list-group-item-action" href="#side">Sides</a>
+                    <a class="list-group-item list-group-item-action" href="#drink">Drinks</a>
+                </div>
+            </div>
+            <!-- <div class="dropdown">   position-fixed  
             <a href="#" class="d-flex align-items-center link-dark text-decoration-none dropdown-toggle"
                 id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
                 <img src="https://github.com/mdo.png" alt="" width="32" height="32" class="rounded-circle me-2">
@@ -57,196 +60,198 @@
                 <li><a class="dropdown-item" href="#">Sign out</a></li>
             </ul>
         </div> -->
-    </div>
+        </div>
 
+        <div class="col-md-10 col-12 d-block">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example"
+                tabindex="0">
+                <div class="container px-4 py-5" id="featured-3">
+                    <h2 class="pb-2 border-bottom text-warning" id="main">Main Dishes (aka pizzas)</h2>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
 
-    <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
-        <div class="container px-4 py-5" id="featured-3">
-            <h2 class="pb-2 border-bottom text-warning" id="main">Main Dishes (aka pizzas)</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
-
-                    </div>
-                    <h3 class="fs-2 text-primary">Hawaiian Pizza</h3>
-                    <p>Pizza bread with tomato sauce, mozzarella cheese, ham, and pineapple.</p>
-                    <!-- <a href="#" class="tomato sauce, mozzarella cheese, ham, and pineapple.icon-link d-inline-flex align-items-center">
+                            </div>
+                            <h3 class="fs-2 text-primary">Hawaiian Pizza</h3>
+                            <p>Pizza bread with tomato sauce, mozzarella cheese, ham, and pineapple.</p>
+                            <!-- <a href="#" class="tomato sauce, mozzarella cheese, ham, and pineapple.icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#collection"></use>
                     </svg>
                 </a> -->
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
-                    </div>
-                    <h3 class="fs-2 text-primary">Cheese Pizza</h3>
-                    <p>Pizza bread with tomato sauce and cheese.</p>
-                    <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
+                            </div>
+                            <h3 class="fs-2 text-primary">Cheese Pizza</h3>
+                            <p>Pizza bread with tomato sauce and cheese.</p>
+                            <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                     </svg>
                 </a> -->
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
-                    </div>
-                    <h3 class="fs-2 text-primary">Broccoli Pizza</h3>
-                    <p>Pizza bread with tomato sauce, cheese and broccoli.</p>
-                    <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
+                            </div>
+                            <h3 class="fs-2 text-primary">Broccoli Pizza</h3>
+                            <p>Pizza bread with tomato sauce, cheese and broccoli.</p>
+                            <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                     </svg>
                 </a> -->
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
-                    </div>
-                    <h3 class="fs-2 text-primary">Tuna Pizza</h3>
-                    <p>Pizza bread with tomato sauce, cheese and tuna.</p>
-                    <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
+                            </div>
+                            <h3 class="fs-2 text-primary">Tuna Pizza</h3>
+                            <p>Pizza bread with tomato sauce, cheese and tuna.</p>
+                            <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#.."></use>
                     </svg>
                 </a> -->
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
-                    </div>
-                    <h3 class="fs-2 text-primary">Pepperoni Pizza</h3>
-                    <p>Pizza bread with tomato sauce, cheese and pepperoni.</p>
-                    <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="noun-pizza-1977188.png" alt="">
+                            </div>
+                            <h3 class="fs-2 text-primary">Pepperoni Pizza</h3>
+                            <p>Pizza bread with tomato sauce, cheese and pepperoni.</p>
+                            <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                     </svg>
                 </a> -->
-                </div>
-            </div>
-        </div>
-
-        <div class="container px-4 py-5" id="featured-3">
-            <h2 class="pb-2 border-bottom text-warning" id="side">Side Dishes</h2>
-            <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
-
+                        </div>
                     </div>
-                    <h3 class="fs-2 text-primary">Fries</h3>
-                    <p>Fried potatos (cheese, truffle or ketchup flavoured)</p>
-                    <!-- <a href="#" class="tomato sauce, mozzarella cheese, ham, and pineapple.icon-link d-inline-flex align-items-center">
+                </div>
+
+                <div class="container px-4 py-5" id="featured-3">
+                    <h2 class="pb-2 border-bottom text-warning" id="side">Side Dishes</h2>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
+
+                            </div>
+                            <h3 class="fs-2 text-primary">Fries</h3>
+                            <p>Fried potatos (cheese, truffle or ketchup flavoured)</p>
+                            <!-- <a href="#" class="tomato sauce, mozzarella cheese, ham, and pineapple.icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#collection"></use>
                     </svg>
                 </a> -->
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
-                    </div>
-                    <h3 class="fs-2 text-primary">Chicken Wings</h3>
-                    <p>Comes in 3,6, and 12 pieces. With barbeque and original flavours.</p>
-                    <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
+                            </div>
+                            <h3 class="fs-2 text-primary">Chicken Wings</h3>
+                            <p>Comes in 3,6, and 12 pieces. With barbeque and original flavours.</p>
+                            <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                     </svg>
                 </a> -->
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
-                    </div>
-                    <h3 class="fs-2 text-primary">Chicken Nuggets</h3>
-                    <p>Comes in 3, 6 and 9 pieces. With original and spicy flavours.</p>
-                    <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
+                            </div>
+                            <h3 class="fs-2 text-primary">Chicken Nuggets</h3>
+                            <p>Comes in 3, 6 and 9 pieces. With original and spicy flavours.</p>
+                            <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                     </svg>
                 </a> -->
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
-                    </div>
-                    <h3 class="fs-2 text-primary">Garlic Bread</h3>
-                    <p>Garlic butter inside bread.</p>
-                    <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
+                            </div>
+                            <h3 class="fs-2 text-primary">Garlic Bread</h3>
+                            <p>Garlic butter inside bread.</p>
+                            <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#.."></use>
                     </svg>
                 </a> -->
-                </div>
-                <div class="feature col">
-                    <div
-                        class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                        <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
-                    </div>
-                    <h3 class="fs-2 text-primary">Mashed potatos</h3>
-                    <p>Freshly peeled potatos that are flattened</p>
-                    <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="sides.jpeg" alt="">
+                            </div>
+                            <h3 class="fs-2 text-primary">Mashed potatos</h3>
+                            <p>Freshly peeled potatos that are flattened</p>
+                            <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                     </svg>
                 </a> -->
+                        </div>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </div>
+                <div class="container px-4 py-5" id="featured-3">
+                    <h2 class="pb-2 border-bottom text-warning" id="drink">Drinks</h2>
+                    <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="drink.jpg" alt="">
 
-    <div class="container px-4 py-5" id="featured-3">
-        <h2 class="pb-2 border-bottom text-warning" id="drink">Drinks</h2>
-        <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
-            <div class="feature col">
-                <div
-                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                    <img class="rounded-lg-3" width="40" height="40" src="drink.jpg" alt="">
-
-                </div>
-                <h3 class="fs-2 text-primary">Pepsi</h3>
-                <p>Comes in canned, bottled (500ml or 1l)</p>
-                <!-- <a href="#" class="tomato sauce, mozzarella cheese, ham, and pineapple.icon-link d-inline-flex align-items-center">
+                            </div>
+                            <h3 class="fs-2 text-primary">Pepsi</h3>
+                            <p>Comes in canned, bottled (500ml or 1l)</p>
+                            <!-- <a href="#" class="tomato sauce, mozzarella cheese, ham, and pineapple.icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#collection"></use>
                     </svg>
                 </a> -->
-            </div>
-            <div class="feature col">
-                <div
-                    class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
-                    <img class="rounded-lg-3" width="40" height="40" src="drink.jpg" alt="">
-                </div>
-                <h3 class="fs-2 text-primary">Coke</h3>
-                <p>Comes in canned, bottled (500ml or 1l)</p>
-                <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
+                        </div>
+                        <div class="feature col">
+                            <div
+                                class="feature-icon d-inline-flex align-items-center justify-content-center text-bg-light bg-gradient fs-2 mb-3">
+                                <img class="rounded-lg-3" width="40" height="40" src="drink.jpg" alt="">
+                            </div>
+                            <h3 class="fs-2 text-primary">Coke</h3>
+                            <p>Comes in canned, bottled (500ml or 1l)</p>
+                            <!-- <a href="#" class="icon-link d-inline-flex align-items-center">
                     Call to action
                     <svg class="bi" width="1em" height="1em">
                         <use xlink:href="#chevron-right"></use>
                     </svg>
                 </a> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -275,8 +280,7 @@
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#subscribe">
                 Subscribe
             </button>
-            <div class="modal fade" id="subscribe" tabindex="-1" aria-labelledby="subscribeLabel"
-                aria-hidden="true">
+            <div class="modal fade" id="subscribe" tabindex="-1" aria-labelledby="subscribeLabel" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
