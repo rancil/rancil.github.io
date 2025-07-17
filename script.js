@@ -1,5 +1,6 @@
 document.getElementById('step2').style.display = 'none';
 document.getElementById('step3').style.display = 'none';
+document.getElementById('submitted').style.display = 'none';
 document.getElementById('step1next').addEventListener('click',function(){
     username = document.getElementById('username').value;
     spanname = document.getElementById("spanname");
@@ -9,17 +10,19 @@ document.getElementById('step1next').addEventListener('click',function(){
     document.getElementById('step2').style.display = 'block';
 })
 document.getElementById('step2next').addEventListener('click',function(){
-    date = document.getElementById("date").value;
+    dates = document.getElementById("date").value;
     // payment.innerHTML = text;
-    date = new Date(date);
+    date = new Date(dates);
     price = 1;
     price += isWeekend(date);
     document.getElementById('step2').style.display = 'none';
     document.getElementById('step3').style.display = 'block';
 })
 document.getElementById('submit').addEventListener('click',function(){
+    datecfm = document.getElementById('datecfm');
+    datecfm.innerHTML = dates;
     document.getElementById('step3').style.display = 'none';
-    document.getElementById('step1').style.display = 'block';
+    document.getElementById('submitted').style.display = 'block';
 })
 
 
